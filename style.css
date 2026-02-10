@@ -1,0 +1,87 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+}
+
+main {
+    padding: 0 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--yellow);
+    width: 100vw;
+    height: 100vh;
+}
+.card {
+    padding: 20px;
+    background: var(--white);
+    border-radius: 20px;
+    border: 1px solid var(--gray-950);
+    box-shadow: 5px 5px black;
+    box-sizing: border-box;
+}
+.blog-img img {
+    /* height: 200px; */
+    width: 100%;
+    border-radius: 10px;
+}
+.blog-img {
+    margin-bottom: 20px;
+}
+.blog-details span {
+    padding: 4px 12px;
+    color: var(--gray-950);
+    font-size: 14px;
+    background: var(--yellow);
+    font-weight: 800;
+    border-radius: 5px;
+}
+.blog-details p {
+    margin: 1.5em 0;
+    font-size: 12px;
+    color: var(--gray-500);
+}
+.pblsh {
+    color: var(--gray-950) !important;
+    font-size: 12px !important;
+}
+h1 {
+    font-size: unset;
+    font-weight: 800;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1em 0;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+}
+h2 {
+    font-weight: 800;
+}
+
+@media (max-width: 1440px) {
+    .card {
+        width: 300px;
+    }
+    h1:hover, h1:focus {
+        color: var(--yellow);
+        cursor: pointer;
+    }
+    h1 {
+        font-size: 18px;
+        font-weight: 900;
+    }
+}
